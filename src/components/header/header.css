@@ -1,0 +1,177 @@
+header {
+  background-color: #fafafa;
+}
+header .nav-li {
+  margin-right: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 0;
+  color: black;
+  display: inline-block;
+}
+header .search {
+  position: fixed;
+  top: 55px;
+  width: 100%;
+  height: 100vh;
+  background: rgba(49, 49, 49, 0.8);
+  z-index: 99;
+}
+header .search .main-search {
+  padding: 20px 0;
+  background-color: white;
+}
+header .search .main-search input {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 40px;
+  border-radius: 40px;
+  color: rgba(0, 0, 0, 0.3);
+  padding: 0 30px;
+  border: 1px solid rgb(190, 190, 190);
+  margin-top: 15px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+header .top-header {
+  padding: 10px 0;
+}
+header .top-header .top-right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+header .phone {
+  display: none;
+  line-height: 40px;
+  background-color: #f5f5f6;
+  border-radius: 25px;
+  padding: 0 10px;
+}
+header .phone i {
+  color: #ff6400;
+  font-size: 14px;
+}
+header .phone span {
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+header .bottom-header {
+  padding: 15px 0;
+  background-color: white;
+}
+header .bottom-header .phone {
+  max-height: 42px;
+  margin-left: 10px;
+  display: block;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+header .bottom-header .phone span {
+  letter-spacing: 0;
+  font-weight: 600;
+}
+header .side-bar {
+  background-color: #fafafa;
+}
+header .burgermen {
+  border-radius: 50%;
+  height: 40px;
+  padding: 0px 13px;
+  background: #f5f5f6;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  width: 27px;
+  height: 28px;
+  margin-right: 30px;
+  transform: scale(0.9);
+}
+header nav a {
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0 10px;
+  color: #323232;
+}
+header button {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 12px;
+  padding: 0 8px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  height: 35px;
+  background-color: white;
+  box-shadow: 0 2px 14px -10px rgba(0, 0, 0, 0.3);
+  margin-left: 10px;
+  min-width: 35px;
+}
+header button.language {
+  font-weight: 600;
+}
+header button.sel {
+  margin-left: 0;
+  font-size: 12px;
+  padding: 10px 20px;
+}
+header button.moon {
+  background-color: #323232;
+  padding: 0;
+  text-align: center;
+}
+header button.moon .moonx {
+  color: white;
+  font-size: 13.5px;
+}
+header button.moon .sunx {
+  font-size: 13.5px;
+  color: white;
+}
+header button i {
+  transform: rotateY(180deg);
+  font-size: 10px;
+}
+header .sel-active {
+  opacity: 1;
+  font-weight: 600;
+  color: #FF7A00 !important;
+  border-radius: 5px;
+  border: 1px solid #FF7A00;
+}
+
+@media (max-width: 992px) {
+  header {
+    background-color: white;
+  }
+  header .burgermen {
+    display: flex;
+  }
+  header nav {
+    display: none;
+  }
+  header .top-right {
+    display: none !important;
+  }
+  header .top-header .phone {
+    display: block !important;
+  }
+  header .logo {
+    margin: 0 auto;
+  }
+  header .logo img {
+    margin-right: 0;
+  }
+  header .bottom-header {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .bottom-header nav a {
+    font-size: 14px !important;
+  }
+}/*# sourceMappingURL=header.css.map */

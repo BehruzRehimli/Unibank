@@ -1,0 +1,128 @@
+* {
+  color: black;
+}
+
+.massege {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: fixed;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 40px;
+  right: 50px;
+}
+.massege svg {
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
+}
+
+footer .top-footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer .top-footer b {
+  font-size: 14px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+footer .top-footer a {
+  font-size: 12px;
+  color: #000000;
+  line-height: 35px;
+}
+footer .icons {
+  text-align: start;
+}
+footer .icons > a {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ff6400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+}
+footer .icons > a span {
+  color: white;
+  font-size: 14px;
+}
+footer .icons i {
+  font-size: 12px;
+  padding: 3px;
+  color: white;
+}
+footer .icons .web {
+  background-color: #888;
+}
+footer .line {
+  height: 1px;
+  background-color: rgba(149, 149, 149, 0.2352941176);
+}
+footer .bottom-footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+footer .bottom-footer #top {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  margin-top: 15px;
+}
+footer .bottom-footer #bottom {
+  font-weight: 300;
+  font-size: 12px;
+  margin-top: 10px;
+  line-height: 12px;
+  text-align: start;
+}
+footer .bottom-footer > .portniors a {
+  display: inline-block;
+  width: 65px;
+  height: 50px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+footer .bottom-footer > .portniors #first {
+  background-image: url("../../images/1.png");
+  background-size: cover;
+}
+footer .bottom-footer > .portniors #second {
+  width: 100px;
+  background-image: url("../../images/2.png");
+  background-size: cover;
+}
+footer .bottom-footer > .portniors #third {
+  width: 90px;
+  background-image: url("../../images/3.png");
+  background-size: cover;
+}
+footer .bottom-footer > .portniors #fourth {
+  width: 85px;
+  background-image: url("../../images/4.png");
+  background-size: cover;
+}
+
+@media (max-width: 992px) {
+  footer .top-footer {
+    display: none;
+  }
+  footer .icons {
+    justify-content: center;
+  }
+  footer .bottom-footer {
+    display: block;
+  }
+  footer .bottom-footer #bottom {
+    text-align: center;
+  }
+  footer .bottom-footer .portniors {
+    margin-bottom: 40px;
+  }
+}/*# sourceMappingURL=footer.css.map */

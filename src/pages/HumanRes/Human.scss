@@ -1,0 +1,235 @@
+.human{
+    .menu-btn{
+        font-size: 15px;
+        padding: 16px 40px;
+        border-radius: 25px;
+        background-color: transparent;
+    }
+    .menu-btn::before{
+        background-color: white;
+    }
+    .btns::-webkit-scrollbar {
+        display: none;
+      }
+      .btns{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: 0;
+        margin: 0px 0 20px;
+        height: auto;
+        padding: 20px 0;
+    }
+    h1{
+        font-size: 33px;
+        font-weight: 700;
+        color: #ff6400;
+        margin-top: 30px;
+    }
+    #player{
+        border-radius: 10px;
+    }
+    .vid{background-color: black;
+    border-radius: 10px;
+    display: none;}
+    .video-area{
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+        position: relative;
+        background-image: url("https://unibank.az/uploads/menus/o_1cnj0q0r11k96193k1rgp1tp1icca.jpg");
+        background-size: cover;
+    }
+    .video-area span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        font-size: 70px;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    .box{
+
+        span{
+            font-size: 65px;
+            color: #ff6400;
+        }
+        i{
+            font-size: 60px;
+            color: #ff6400;
+        }
+        h5{
+            margin-bottom: 24px;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 15px;
+            color: rgba(45, 44, 44, 0.859);
+            line-height: normal;
+            margin-bottom: 0%;
+        }
+        .grey-txt{
+            color: rgba(101, 101, 101, 0.859);
+            padding-bottom: 25px;
+        }
+    }
+    .box.dif{
+        height: 330px ;
+        max-height: none;
+        transition: 0.6s;
+    }
+    .box.dif:hover{
+        background-color: #ff6400;
+    }
+    .box.dif:hover *{
+        color: white;
+    }
+    .box{
+        max-height: none;
+    }
+    .box-org{
+        background-color: #ff6400;
+        height: 230px;
+        .txt{
+            color: white;
+            font-size: 15px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+    }
+    .vacancy-box{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 65px;
+        h5{
+            font-size: 18px;
+        }
+        .grey-txt{
+            font-size: 13px;
+        }
+        .orange{
+            display: inline-block;
+                padding: 14px 30px;
+                font-size: 15px;
+                line-height: 15px;
+                background: #ff6400;
+                border-radius: 25px;
+                box-shadow: 0 10px 10px -10px rgba(255,107,0,.51);
+                color: #fff;
+                font-weight: 600;
+                border: none;
+                max-height: 50px;
+                i{
+                    font-size: 17px;
+                    margin-left: 10px;
+                }
+        }
+    }
+    h2{
+        font-size: 34px;
+        font-weight: 700;
+    }
+    .grey-text.txt{
+        color: #777777;
+    }
+    
+
+}
+main{
+    .head{
+        height: 325px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 0 65px;
+        background-image: radial-gradient(circle at 49% 20%, rgba(221, 221, 221, 0.221), rgba(255, 255, 255, 0) 100%), linear-gradient(to bottom, #ff6b00, #ff6b00), linear-gradient(to bottom, #5a6771, #5a6771) !important;        border-radius: 10px;
+        .left{
+            position: relative;
+            width: 35%;
+            height: 100%;   
+            margin-right: 10px;
+            img{
+                max-width: 100%;
+                height: 350px;
+                position: absolute;
+                bottom: 0%;
+                left: 0%;
+            }
+        }
+        .right{
+            width: 65%;
+            text-align: start;
+            h1{
+                color: #fff;
+                font-weight: 700;
+                font-size: 34px;
+            }
+            p{
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media (max-width:992px){
+    .human{
+        p{
+            font-size: 14px !important;
+        }
+        .box-org{
+            display: flex;
+            height: auto;
+            align-items: center;
+            padding: 20px 40px;
+            p{
+                text-align: start;
+                margin-left: 20px;
+                margin-top: 0 !important;
+            }
+            i{
+                font-size: 35px;
+            }
+        }
+        .vacancy-box{
+            display: block;
+            h5{
+                font-size: 15px;
+            }
+            .grey{
+                font-size: 11px !important;
+                margin-bottom: 12px;
+            }
+        }
+        .human-img{
+            width: 35%;
+        }
+        .portre{
+            width: 70% !important;
+        }
+        .head{
+            padding: 0 20px;
+            .left{
+                position: absolute;
+                bottom: 0%;
+                left: 0%;
+                z-index: 1;
+                img{
+                    height: 280px;
+                    opacity: 0.2;
+                    max-width: none;
+                }
+            }
+            .right{
+                z-index: 3;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.cards h1 {
+  font-size: 32px;
+  color: #FF6400;
+  font-weight: 700;
+  margin-bottom: 32px;
+  text-align: start;
+}
+.cards .box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 70px;
+  max-height: none;
+}
+.cards .box img {
+  width: 315px;
+  max-width: 100%;
+  box-shadow: -15px 15px 30px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 15px;
+}
+.cards .box .icons {
+  box-shadow: none;
+  width: 95%;
+}
+.cards .box .title {
+  font-weight: 800;
+  font-size: 25px;
+  color: #000;
+  line-height: 30px;
+  margin-top: 0%;
+  margin-bottom: 0;
+}
+.cards .box .kart-infos {
+  text-align: start;
+}
+.cards .box .kart-infos .titles {
+  display: block;
+}
+.cards .ucart {
+  background-color: #fafafa;
+  position: relative;
+}
+.cards .ucart .title {
+  margin-top: 15px;
+}
+.cards .ucart button {
+  position: absolute;
+  top: 13%;
+  right: 5%;
+}
+.cards .ucart #content {
+  text-align: start;
+}
+.cards #cart-info {
+  line-height: 25px;
+  font-size: 15px;
+}
+
+@media (max-width: 992px) {
+  .cards .box {
+    padding: 30px 40px !important;
+  }
+  .cards .box .carts img {
+    width: 100%;
+  }
+  .cards .box .kart-infos {
+    text-align: center;
+  }
+  .cards .box .kart-infos .title {
+    font-size: 18px;
+  }
+  .cards .box .kart-infos #cart-info {
+    font-size: 13px;
+  }
+  .cards .ucart #content {
+    text-align: center;
+  }
+  .cards .ucart button {
+    position: static;
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=Cards.css.map */

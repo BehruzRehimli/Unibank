@@ -1,0 +1,87 @@
+.carousel .carousel-indicators button{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}  
+.carousel .carousel-control-prev{
+    display: none;
+} 
+.carousel .carousel-control-next{
+    display: none;
+} 
+.carousel{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.cor-item{
+    height: 450px;
+    background-color: #ff6400;
+    border-radius: 10px;
+    display: flex;
+}
+.cor-item>*{
+    flex: 1;
+}
+.cor-right{
+    text-align: start;
+}
+.cor-right h1{
+    color: white;
+    font-weight: 800;
+    font-size: 34px;
+    margin-bottom: 20px;
+    margin-top: 20%;
+}
+.cor-right p{
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 40px;
+    line-height: 25px;
+    padding-right: 105px;
+}
+.cor-right button{
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 16px 25px;
+    font-size: 14px;
+    background-color: transparent;
+    border-radius: 30px;
+    font-weight: 700;
+    
+}
+.cor-left{
+    position: relative;
+}
+.cor-left img{
+    width: 75%;
+    position: absolute;
+    bottom: 0%;
+    right: 60px;
+}
+.cor-left .fourt{
+    width: 80%;
+}
+@media (max-width:992px){
+    .cor-item{
+        flex-direction: column-reverse;
+    }
+    .cor-right{
+        text-align: center;
+        padding: 0 20px;
+    }
+    .cor-right p{
+        padding-right: 0;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .cor-right h1{
+        font-size: 22px;
+        margin-top: 12%;
+    }
+    .cor-right button{
+        padding: 10px 15px;
+        font-size: 12px;
+        }
+}
