@@ -3,11 +3,27 @@ import { useState } from "react";
 import cart1 from "../../images/ucard2.webp"
 import Header from "../../components/header/header"
 import Footer from "../../components/footer/footer"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
 export default function Basket(){
     document.body.style.backgroundColor="white"
+
+    const silindi = () => {
+
+        toast.error('Məhsul səbətdən silinib !', {
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
+    };
 
     let baskets=JSON.parse(localStorage.getItem("cards"));
     let totalSum=0;
@@ -24,6 +40,7 @@ export default function Basket(){
         document.querySelector(".total-count").innerHTML=totalCount
         let newArr = baskets.filter((element)=>element.Id!=id);
         localStorage.setItem("cards",JSON.stringify(newArr));
+        silindi();
     }
 
     const Grow= function(e){
@@ -129,7 +146,18 @@ export default function Basket(){
             </div>
         </div>
     
-                
+                        <ToastContainer
+                        position="bottom-right"
+                        autoClose={5000}
+                        hideProgressBar={false}
+                        newestOnTop={false}
+                        closeOnClick
+                        rtl={false}
+                        pauseOnFocusLoss
+                        draggable
+                        pauseOnHover
+                        theme="colored"
+                        />     
             </main>        
         <Footer/>
         </>

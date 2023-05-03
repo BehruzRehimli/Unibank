@@ -14,7 +14,8 @@ import card9 from "../../images/cart9.webp"
 import card10 from "../../images/cart10.jpg"
 import Header from "../../components/header/header"
 import Footer from "../../components/footer/footer"
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -22,6 +23,35 @@ import Footer from "../../components/footer/footer"
 
 export default function Cards(){
     document.body.style.backgroundColor="white"
+
+    const elaveOlundu = () => {
+
+        toast.success('Məhsul səbətə əlavə olundu !', {
+            position: "bottom-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            });
+    };
+
+    const sebetdeVar = () => {
+
+        toast.error('Məhsul artıq səbətdə var !', {
+            position: "bottom-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
+        
+    };
 
     let hasBasket=true;
     const Click=(e)=>{
@@ -42,7 +72,7 @@ export default function Cards(){
                 Count: 1
             })
             localStorage.setItem("cards",JSON.stringify(baskets))
-
+            elaveOlundu();
         }
         else{
             baskets.map((element)=>{
@@ -50,6 +80,7 @@ export default function Cards(){
                     hasBasket=false;
                     element.Count++;
                     localStorage.setItem("cards",JSON.stringify(baskets))
+                    sebetdeVar();
                 }
             })
             if(hasBasket===true){
@@ -62,10 +93,14 @@ export default function Cards(){
                     Count: 1
                 })
                 localStorage.setItem("cards",JSON.stringify(baskets))
+                elaveOlundu();
             }
         }
         document.querySelector(".basketCount").innerHTML= baskets.length
     }   
+
+
+
 
     return(
         <>
@@ -90,6 +125,18 @@ export default function Cards(){
                         <p className="title">Ucard</p>
                         <p className="mt-3 pt-3">UCard - kredit və multivalyutalı debet kartını özündə birləşdirən tək kartdır.</p>
                         <button onClick={Click} className="orange basket-btn">Əlavə et <i style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
+                        <ToastContainer
+                        position="bottom-right"
+                        autoClose={2000}
+                        hideProgressBar={false}
+                        newestOnTop={false}
+                        closeOnClick
+                        rtl={false}
+                        pauseOnFocusLoss
+                        draggable
+                        pauseOnHover
+                        theme="colored"
+                        />                        
                         <p className="d-none">5</p>
                         <div className="info-icons d-flex justify-content-between">
                             <div className="icon-box">
