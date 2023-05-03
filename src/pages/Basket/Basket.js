@@ -75,7 +75,9 @@ export default function Basket(){
         return(
             <>
             <Header/>
+            <main>
             <h1 className="my-5">Səbət boşdur...</h1>
+            </main>
             <Footer/>
 
             </>
