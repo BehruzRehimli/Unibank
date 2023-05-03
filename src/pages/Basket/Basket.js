@@ -72,7 +72,14 @@ export default function Basket(){
     }
 
     if (baskets.length===0) {
-        return(<h1 className="my-5">Səbət boşdur...</h1>)
+        return(
+            <>
+            <Header/>
+            <h1 className="my-5">Səbət boşdur...</h1>
+            <Footer/>
+
+            </>
+        )
     }
 
     return (    
@@ -101,8 +108,8 @@ export default function Basket(){
                                     <div>
                                         <small className="count">{element.Count}</small>
                                         <div className="arrows">
-                                            <i onClick={Grow} class="trash fa-solid fa-caret-up"></i>
-                                            <i onClick={Lower} class="trash fa-solid fa-caret-down"></i>
+                                            <i onClick={Grow} className="trash fa-solid fa-caret-up"></i>
+                                            <i  onClick={Lower} className="trash fa-solid fa-caret-down"></i>
                                         </div>
                                         <i onClick={Delete} style={{marginTop:"10px"}} class="trash fa-regular fa-trash-can"></i>
                                     </div>
@@ -116,7 +123,7 @@ export default function Basket(){
                         )
                     })
                 }
-                <h5 className=" my-5">Ümumi məhsul sayı: <b className="total-count me-3">{totalCount}</b> Total məbləğ: <b className="total-sum">{totalSum}.00 AZN</b></h5>
+                <h5 className="text-end my-5">Ümumi məhsul sayı: <b style={{fontSize:'22px'}} className="total-count me-3">{totalCount}</b><br /><br /> Total məbləğ: <b  className="total-sum" style={{fontSize:'22px'}}>{totalSum}.00 AZN</b></h5>
             </div>
         </div>
     

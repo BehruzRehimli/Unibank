@@ -98,4 +98,7 @@
   .services .box span {
     font-size: 24px;
   }
+  .menu-btn {
+    padding: 12px 20px !important;
+  }
 }/*# sourceMappingURL=Services.css.map */

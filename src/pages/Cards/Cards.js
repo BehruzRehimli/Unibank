@@ -31,7 +31,6 @@ export default function Cards(){
         let title=e.target.previousElementSibling.previousElementSibling.innerHTML;
         let about=e.target.previousElementSibling.innerHTML;
         let src=e.target.parentElement.previousElementSibling.firstChild.src;
-        console.log(price)
         let baskets=JSON.parse(localStorage.getItem("cards"))
         if (baskets.length===0) {
             baskets.push({
@@ -43,6 +42,7 @@ export default function Cards(){
                 Count: 1
             })
             localStorage.setItem("cards",JSON.stringify(baskets))
+
         }
         else{
             baskets.map((element)=>{
@@ -64,6 +64,7 @@ export default function Cards(){
                 localStorage.setItem("cards",JSON.stringify(baskets))
             }
         }
+        document.querySelector(".basketCount").innerHTML= baskets.length
     }   
 
     return(
@@ -74,7 +75,8 @@ export default function Cards(){
                     <div className="container">
                         <div className="mt-3 text-end">
                             <div>
-                                <Link to="/basket" className="orange">Səbətə get</Link>
+                                <Link to="/basket" className="orange me-3">Səbətə get</Link>
+                                <Link to="/basket" className="me-4" style={{position:'relative'}}><i style={{color:'#ff6400',fontSize:'22px'}} class="fa-solid fa-cart-shopping"></i> <span style={{position:'absolute',top:'-20px',right:"-13px",padding:'0 8px',borderRadius:'50%',backgroundColor:'#fafafa',color:'#ff6400',border:'1px solid #ff6400',fontWeight:'600'}} className="basketCount">{JSON.parse(localStorage.getItem('cards')).length}</span> </Link>
                             </div>
                         </div>
                     <h1 className=" mt-4">
