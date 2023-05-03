@@ -6,6 +6,11 @@ import { useLoadScript,GoogleMap,Marker } from "@react-google-maps/api"
 
 
 export default function Services(){
+    document.body.style.backgroundColor="white"
+
+
+
+
     const { isLoaded } = useLoadScript({
         googleMapsApiKey: process.env.REACT_APP_GOOGLE_API_KEY,
       });

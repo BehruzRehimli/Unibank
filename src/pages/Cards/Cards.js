@@ -21,6 +21,8 @@ import Footer from "../../components/footer/footer"
 
 
 export default function Cards(){
+    document.body.style.backgroundColor="white"
+
     let hasBasket=true;
     const Click=(e)=>{
         hasBasket=true;

@@ -6,6 +6,7 @@ import Cards from "./pages/Cards/Cards"
 import Basket from "./pages/Basket/Basket"
 import Ibank from "./pages/Ibank/Ibank"
 import Human from "./pages/HumanRes/Human"
+import Helmet from "react-helmet"
 
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
   return (
     <>
     <div className="App">
+        <Helmet>
+          <title>Unibank</title>
+        </Helmet>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/services' element={<Services/>}/>

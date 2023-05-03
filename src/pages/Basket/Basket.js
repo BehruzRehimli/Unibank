@@ -7,6 +7,8 @@ import Footer from "../../components/footer/footer"
 
 
 export default function Basket(){
+    document.body.style.backgroundColor="white"
+
     let baskets=JSON.parse(localStorage.getItem("cards"));
     let totalSum=0;
     let totalCount=0;

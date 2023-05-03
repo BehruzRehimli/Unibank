@@ -30,9 +30,16 @@ function Header(){
     }
 
     const [isDark,setIsDark]=useState(true);
-
+    localStorage.setItem("dark",true);
 
     const darkMode=function(){
+        let isDrak= localStorage.getItem("dark")
+        if(isDark==true){
+            localStorage.setItem("dark",false)
+        }
+        else{
+            localStorage.setItem("dark",true)
+        }
         if (isDark) {
             document.body.style.backgroundColor="black"
             let h5=document.querySelectorAll("h5")
@@ -70,6 +77,7 @@ function Header(){
             let z=document.querySelectorAll(".z")
             for(let x of z){
                 x.style.backgroundColor="#1a1a1a"
+                x.style.color="white"
             }
             
             document.querySelector("header").style.backgroundColor="black"
@@ -114,6 +122,7 @@ function Header(){
             let z=document.querySelectorAll(".z")
             for(let x of z){
                 x.style.backgroundColor=""
+                x.style.color=""
             }
 
             
@@ -189,16 +198,16 @@ function Header(){
 
                 </div>
                     <div className="top-right">
-                    <button className="sel sel-active">Fərdi</button>
-                    <button className="sel">Biznes</button>
+                    <button className="sel sel-active z">Fərdi</button>
+                    <button className="sel z">Biznes</button>
                     <button className="moon x" id="mode-btn" onClick={darkMode}>
                     <span className="material-symbols-outlined moonx">
                     sleep
                     </span>
                     </button>
-                    <button className="language">ENG</button>
-                    <button className="language">RUS</button>
-                    <button onClick={Open}><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button className="language z">ENG</button>
+                    <button className="language z">RUS</button>
+                    <button onClick={Open} className="z"><i class="fa-solid fa-magnifying-glass z"></i></button>
                 </div>
                 <div className="phone">
                 <i class="fa-solid fa-phone"></i>
@@ -221,15 +230,15 @@ function Header(){
                     <Link className="nav-li" to="">Əlavə xidmətlər</Link>
                 </nav>
                 <div className="d-flex">
-                    <Link to='/basket' style={{color:'black'}} className="phone"><i class="fa-solid fa-cart-shopping me-2"></i>Səbət</Link>
-                <div className="phone">
+                    <Link to='/basket' style={{color:'black'}} className="phone z"><i class="fa-solid fa-cart-shopping me-2"></i>Səbət</Link>
+                <div className="phone z">
                 <i class="fa-solid fa-phone"></i>
-                <span style={{letterSpacing:"-1px"}}>117</span>
+                <span className="z" style={{letterSpacing:"-1px"}}>117</span>
                 </div>
-                <Link to="/ibank">
-                <div className="phone">
+                <Link to="/ibank" className="">
+                <div className="phone z" >
                 <i style={{fontSize: "17px"}} class="fa-sharp fa-solid fa-circle-arrow-right"></i>
-                <span>Internet bankçılıq</span>
+                <span className="z">Internet bankçılıq</span>
                 </div></Link>
                 </div>
             </div>

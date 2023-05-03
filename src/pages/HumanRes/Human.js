@@ -6,6 +6,8 @@ import Video from "../../video/Un.mp4"
 
 
 export default function Human(){
+    document.body.style.backgroundColor="white"
+
 
     const Click=function(e){
         let btns= document.querySelectorAll(".menu-btn");
