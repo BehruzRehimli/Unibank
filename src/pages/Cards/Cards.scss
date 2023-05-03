@@ -49,6 +49,19 @@
         }
         #content{
             text-align: start ;
+            padding-left: 16px;
+        }
+        .info-icons{
+            .icon-box{
+                display: flex;
+                .icon-bottom{
+                    margin-left: 15px;
+                }
+            }
+            i{
+                color: #FF6400;
+                font-size: 40px;
+            }
         }
     }
     #cart-info{
@@ -80,10 +93,28 @@
         .ucart{
             #content{
                 text-align: center;
+                padding-left: 0%;
             }
             button{
                 position:static;  
                 margin-bottom: 20px;              
+            }
+            .info-icons{
+                .icon-box{
+                    display: block;
+                    margin-top: 15px;
+                    .icon-bottom{
+                        margin-left: 0px;
+                    }
+    
+                    i{
+                        margin-bottom: 7px;
+                        font-size: 30px;
+                    }
+                    h5{
+                        font-size: 14px !important;
+                    }
+                }
             }
         }
     }

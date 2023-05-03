@@ -76,7 +76,7 @@ export default function Cards(){
                         <div className="mt-3 text-end">
                             <div>
                                 <Link to="/basket" className="orange me-3">Səbətə get</Link>
-                                <Link to="/basket" className="me-4" style={{position:'relative'}}><i style={{color:'#ff6400',fontSize:'22px'}} class="fa-solid fa-cart-shopping"></i> <span style={{position:'absolute',top:'-20px',right:"-13px",padding:'0 8px',borderRadius:'50%',backgroundColor:'#fafafa',color:'#ff6400',border:'1px solid #ff6400',fontWeight:'600'}} className="basketCount">{JSON.parse(localStorage.getItem('cards')).length}</span> </Link>
+                                <Link to="/basket" className="me-4 " style={{position:'relative'}}><i style={{color:'#ff6400',fontSize:'22px'}} class="fa-solid fa-cart-shopping"></i> <span style={{position:'absolute',top:'-20px',right:"-13px",padding:'0 8px',borderRadius:'50%',backgroundColor:'#fafafa',color:'#ff6400',border:'1px solid #ff6400',fontWeight:'600'}} className="basketCount z">{JSON.parse(localStorage.getItem('cards')).length}</span> </Link>
                             </div>
                         </div>
                     <h1 className=" mt-4">
@@ -86,13 +86,35 @@ export default function Cards(){
                     <div className="col-lg-5 col-md-12 col-sm-12 col-12">
                         <img src={Ucard} alt="" />
                     </div>
-                    <div id="content" className="col-lg-7 col-md-12 col-sm-12 col-12 ps-3">
+                    <div id="content" className="col-lg-7 col-md-12 col-sm-12 col-12">
                         <p className="title">Ucard</p>
                         <p className="mt-3 pt-3">UCard - kredit və multivalyutalı debet kartını özündə birləşdirən tək kartdır.</p>
                         <button onClick={Click} className="orange basket-btn">Əlavə et <i style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
                         <p className="d-none">5</p>
-                        <div className="text-start">
-                        <img className="icons text-start" src={icons} alt="icons" />
+                        <div className="info-icons d-flex justify-content-between">
+                            <div className="icon-box">
+                            <i class="fa-solid fa-copy"></i>                            
+                            <div className="icon-bottom">
+                                <h5 style={{fontSize:'17px',marginBottom:'5px'}}>Multivalyutalı</h5>
+                                <h5 style={{fontSize:'17px'}}>tək kart</h5>
+                            </div>
+                            </div>
+                            <div className="icon-box">
+                            <i class="fa-regular fa-hourglass"></i>
+                            <div className="icon-bottom">
+                                <h5 style={{fontSize:'17px',marginBottom:'5px'}}>40 dünədək</h5>
+                                <h5 style={{fontSize:'17px'}}>faizsiz kredit</h5>
+                            </div>
+
+                            </div>
+                            <div className="icon-box">
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            <div className="icon-bottom">
+                                <h5 style={{fontSize:'17px',marginBottom:'5px'}}>30%-dək</h5>
+                                <h5 style={{fontSize:'17px'}}>keşbek</h5>
+                            </div>
+
+                            </div>
                         </div>
                     </div>
                     </div>

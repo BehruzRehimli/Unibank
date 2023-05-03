@@ -49,6 +49,17 @@
 }
 .cards .ucart #content {
   text-align: start;
+  padding-left: 16px;
+}
+.cards .ucart .info-icons .icon-box {
+  display: flex;
+}
+.cards .ucart .info-icons .icon-box .icon-bottom {
+  margin-left: 15px;
+}
+.cards .ucart .info-icons i {
+  color: #FF6400;
+  font-size: 40px;
 }
 .cards #cart-info {
   line-height: 25px;
@@ -73,9 +84,24 @@
   }
   .cards .ucart #content {
     text-align: center;
+    padding-left: 0%;
   }
   .cards .ucart button {
     position: static;
     margin-bottom: 20px;
+  }
+  .cards .ucart .info-icons .icon-box {
+    display: block;
+    margin-top: 15px;
+  }
+  .cards .ucart .info-icons .icon-box .icon-bottom {
+    margin-left: 0px;
+  }
+  .cards .ucart .info-icons .icon-box i {
+    margin-bottom: 7px;
+    font-size: 30px;
+  }
+  .cards .ucart .info-icons .icon-box h5 {
+    font-size: 14px !important;
   }
 }/*# sourceMappingURL=Cards.css.map */
