@@ -16,7 +16,7 @@ function Slider() {
                 </div>
                 <div className="cor-right">
                   <h1>Ləğv olundu!</h1>
-                  <p>Artıq UCard-la dünyanın istənilən yanacaqdoldurma, kafe-restoran və marketlərində 5% keşbek qazanmaq üçün 200 AZN dövriyyə tələbi yoxdur!</p>
+                  <p className='slide-p'>Artıq UCard-la dünyanın istənilən yanacaqdoldurma, kafe-restoran və marketlərində 5% keşbek qazanmaq üçün 200 AZN dövriyyə tələbi yoxdur!</p>
                   <button>Ətraflı</button>
                 </div>
             </div>
@@ -28,7 +28,7 @@ function Slider() {
       </div>
                 <div className="cor-right">
                   <h1>Topla</h1>
-                  <p>İstənilən arzunu reallaşdır! Hədəfinə ad ver və daxılına pul köçürməyə başla!</p>
+                  <p className='slide-p'>İstənilən arzunu reallaşdır! Hədəfinə ad ver və daxılına pul köçürməyə başla!</p>
                   <button>Ətraflı</button>
                 </div>
       </div>
@@ -40,7 +40,7 @@ function Slider() {
       </div>
                 <div className="cor-right">
                   <h1>Sənin kartın, sənin “art”ın!</h1>
-                  <p>UBank-a daxil ol, Apple Wallet / Google Wallet™dakı Unibank kartlarını istədiyin dizayna dəyiş və hamıdan fərqli ol!</p>
+                  <p className='slide-p'>UBank-a daxil ol, Apple Wallet / Google Wallet™dakı Unibank kartlarını istədiyin dizayna dəyiş və hamıdan fərqli ol!</p>
                 </div>
 
       </div>
@@ -52,7 +52,7 @@ function Slider() {
       </div>
                 <div className="cor-right">
                   <h1>Kartdan karta - pulsuzdur!</h1>
-                  <p>Unibank kartlarına limitsiz, ölkədaxili digər bank kartlarına isə 2000 AZN-dək köçürmələri 0% ilə et!</p>
+                  <p className='slide-p'>Unibank kartlarına limitsiz, ölkədaxili digər bank kartlarına isə 2000 AZN-dək köçürmələri 0% ilə et!</p>
                 </div>
       </div>
       </Carousel.Item>

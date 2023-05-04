@@ -44,6 +44,10 @@ a:hover {
   color: var(--text-color) !important;
 }
 
+.slide-p {
+  color: #fff !important;
+}
+
 header {
   background-color: #fafafa;
 }
