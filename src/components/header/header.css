@@ -48,6 +48,10 @@ a:hover {
   color: #fff !important;
 }
 
+.orange-box {
+  background-color: #ff6400 !important;
+}
+
 header {
   background-color: #fafafa;
 }

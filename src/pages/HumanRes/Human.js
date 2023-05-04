@@ -231,37 +231,37 @@ export default function Human(){
                     </div>
                     <div className="row my-3 g-4">
                         <div className="col-lg-3 col-md-12 col-sm-12 col-12">
-                            <div className="box box-org">
+                            <div className="box box-org orange-box">
                                 <div>
                                 <i style={{color:"white"}} class="fa-regular fa-circle-check"></i>
                                 </div>
-                                <p className="txt">Biliyinizi genişləndirmək üçün hədsiz imkanlar</p>
+                                <p className="txt slide-p">Biliyinizi genişləndirmək üçün hədsiz imkanlar</p>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-12 col-sm-12 col-12">
-                        <div className="box box-org">
+                        <div className="box box-org orange-box">
                                 <div>
                                 <i style={{color:"white"}} class="fa-regular fa-circle-check"></i>
                                 </div>
-                                <p className="txt">Güclü komandanın bir parçası olmaq</p>
-                            </div>
-
-                        </div>
-                        <div className="col-lg-3 col-md-12 col-sm-12 col-12">
-                        <div className="box box-org">
-                                <div>
-                                <i style={{color:"white"}} class="fa-regular fa-circle-check"></i>
-                                </div>
-                                <p className="txt">Bank Məktəbində çalışmaq imkanı</p>
+                                <p className="txt slide-p">Güclü komandanın bir parçası olmaq</p>
                             </div>
 
                         </div>
                         <div className="col-lg-3 col-md-12 col-sm-12 col-12">
-                        <div className="box box-org">
+                        <div className="box box-org orange-box">
                                 <div>
                                 <i style={{color:"white"}} class="fa-regular fa-circle-check"></i>
                                 </div>
-                                <p className="txt">Ölkənin aparıcı şirkətlərindən birində uğur yolunuzun binövrəsini qurmaq</p>
+                                <p className="txt slide-p">Bank Məktəbində çalışmaq imkanı</p>
+                            </div>
+
+                        </div>
+                        <div className="col-lg-3 col-md-12 col-sm-12 col-12">
+                        <div className="box box-org orange-box">
+                                <div>
+                                <i style={{color:"white"}} class="fa-regular fa-circle-check"></i>
+                                </div>
+                                <p className="txt slide-p">Ölkənin aparıcı şirkətlərindən birində uğur yolunuzun binövrəsini qurmaq</p>
                             </div>
 
                         </div>
@@ -322,7 +322,7 @@ export default function Human(){
                             <h1>
                             Unibankda çalışmaq
                             </h1>
-                            <p>
+                            <p className="slide-p">
                             Xəyal etdiyin karyeranı məhz Unibankda qur!
                             </p>
                         </div>
@@ -372,7 +372,7 @@ export default function Human(){
                             <h1>
                             İşə qəbul prosesi
                             </h1>
-                            <p>
+                            <p className="slide-p">
                             Müsahibə zamanı özünə əmin olmaq üçün nələri etməlisən?                            
                             </p>
                         </div>
@@ -466,7 +466,7 @@ export default function Human(){
                         <div className="right">
                             <h1>
                             Təlim və İnkişaf                            </h1>
-                            <p>
+                            <p className="slide-p">
                             Karyera və iş həyatınız boyu Təlim və İnkişaf Mərkəzi əsas dostunuz və yol yoldaşınız olacaq!                            </p>
                         </div>
                     </div>
