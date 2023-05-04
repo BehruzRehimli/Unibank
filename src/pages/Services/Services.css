@@ -1,3 +1,4 @@
+@import url("../../components/darkMode/_drak.scss");
 .services .btns {
   display: flex;
   flex-wrap: nowrap;
@@ -18,7 +19,7 @@
   background-color: transparent;
 }
 .services .menu-btn::before {
-  background-color: white;
+  background-color: var(--background-color) !important;
 }
 .services h1 {
   font-size: 33px;

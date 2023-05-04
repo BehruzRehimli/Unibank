@@ -1,9 +1,45 @@
-
+@import url("../darkMode/_drak.scss");
 
 $mainColor: #ff6400;
 $secondColor: rgba(255,255,255,.1);
 $textColor: #323232;
 
+p{
+    color: var(--text-color) !important;
+}
+.box{
+    background-color: var(--box-background) !important;
+}
+.ucard{
+    background-color: var(--box-background) !important;
+}
+.ubank{
+    background-color: var(--box-background) !important;
+}
+.valyuta{
+    background-color: var(--box-background) !important;
+}
+h5,h6,h4,a,b{
+    color: var(--text-color) !important;
+}
+.top-header{
+    background-color: var(--top-header) !important;
+}
+.bottom-header{
+    background-color: var(--background-color) !important;
+}
+.z{
+    background-color: var(--z) !important;
+    color: var(--text-color) !important;
+}
+.prices{
+    p{
+        background-color: var(--background-color) !important;
+    }
+}
+a:hover{
+    color: var(--text-color) !important;
+}
 
 
 header{
@@ -12,7 +48,7 @@ header{
         font-size: 16px;
         font-weight: 700;
         margin-left: 0;
-        color: black;
+        color: var(--text-color);
         display: inline-block;
     }
     .search{
@@ -53,7 +89,7 @@ header{
     .phone{
         display: none;
         line-height: 40px;
-        background-color: #f5f5f6;
+        background-color: var(--box-backgraund);
         border-radius: 25px;
         padding:0 10px;
         i{

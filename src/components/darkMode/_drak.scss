@@ -1,0 +1,64 @@
+#darkMode.clicked{
+    background-color: var(--text-color);
+    .dark-img{
+        background-size: cover;
+        
+    }
+
+}
+
+#darkMode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--text-color) !important;
+    .dark-img{
+        background: var(--text-color) url("../../../src/images/sun.png") no-repeat center ;
+        background-size: cover;
+        
+    }
+} 
+
+#darkMode.clicked{
+    background-color: var(--text-color);
+    .dark-img{
+        background-size: cover;
+        
+    }
+
+}
+
+:root{
+    --dark: black;
+    --white: #fff;
+    --box: #1a1a1a;
+    --box2: #fafafa;
+    --img: "../../../src/images/sun.png"
+    --img2: "../../../src/images/moon.png"
+}
+
+body.dark{
+    --background-color: var(--dark);
+    --text-color: var(--white);
+    --box-background: var(--box);
+    --top-header: var(--dark);
+    --z: var(--box)
+    --image: var(--img)
+}
+body.light{
+    --background-color: var(--white);
+    --text-color: var(--dark);
+    --box-background: var(--box2);
+    --top-header:var(--box2);
+    --z: var(--white)
+    --image: var(--img2)
+}
+body{
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+}

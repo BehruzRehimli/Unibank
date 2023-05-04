@@ -9,18 +9,17 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 export default function Basket(){
-    document.body.style.backgroundColor="white"
 
     const silindi = () => {
 
         toast.error('Məhsul səbətdən silinib !', {
             position: "bottom-right",
-            autoClose: 5000,
+            autoClose: 2000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
-            progress: undefined,
+            progress: 1,
             theme: "colored",
         });
     };

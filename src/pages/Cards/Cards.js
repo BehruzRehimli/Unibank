@@ -125,18 +125,6 @@ export default function Cards(){
                         <p className="title">Ucard</p>
                         <p className="mt-3 pt-3">UCard - kredit və multivalyutalı debet kartını özündə birləşdirən tək kartdır.</p>
                         <button onClick={Click} className="orange basket-btn">Əlavə et <i style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
-                        <ToastContainer
-                        position="bottom-right"
-                        autoClose={2000}
-                        hideProgressBar={false}
-                        newestOnTop={false}
-                        closeOnClick
-                        rtl={false}
-                        pauseOnFocusLoss
-                        draggable
-                        pauseOnHover
-                        theme="colored"
-                        />                        
                         <p className="d-none">5</p>
                         <div className="info-icons d-flex justify-content-between">
                             <div className="icon-box">
@@ -297,6 +285,19 @@ export default function Cards(){
                     </div>
                     </div>
                 </div>
+                     
+                <ToastContainer
+                        position="bottom-right"
+                        autoClose={2000}
+                        hideProgressBar={false}
+                        newestOnTop={false}
+                        closeOnClick
+                        rtl={false}
+                        pauseOnFocusLoss
+                        draggable
+                        pauseOnHover
+                        theme="colored"
+                        />   
             </main>
             <Footer/>
         </>

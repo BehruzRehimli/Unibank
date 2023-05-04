@@ -1,3 +1,4 @@
+@import url("../../components/darkMode/_drak.scss");
 .human .menu-btn {
   font-size: 15px;
   padding: 16px 40px;
@@ -5,7 +6,7 @@
   background-color: transparent;
 }
 .human .menu-btn::before {
-  background-color: white;
+  background-color: var(--background-color) !important;
 }
 .human .btns::-webkit-scrollbar {
   display: none;

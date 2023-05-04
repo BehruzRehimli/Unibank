@@ -4,49 +4,6 @@ import { Link } from "react-router-dom"
 
 
 export default function Footer(){
-    if (localStorage.getItem("dark")==true) {
-        document.body.style.backgroundColor="black"
-        let h5=document.querySelectorAll("h5")
-        for(let x of h5){
-            x.style.color="white"
-        }
-        let h6=document.querySelectorAll("h6")
-        for(let x of h6){
-            x.style.color="white"
-        }
-        let b=document.querySelectorAll("b")
-        for(let x of b){
-            x.style.color="white"
-        }
-        let a=document.querySelectorAll("a")
-        for(let x of a){
-            x.style.color="white"
-        }
-        let h4=document.querySelectorAll("h4")
-        for(let x of h4){
-            x.style.color="white"
-        }
-        let p=document.querySelectorAll("p")
-        for(let x of p){
-            x.style.color="white"
-        }
-        let span=document.querySelectorAll("span")
-        for(let x of span){
-            x.style.color="white"
-        }
-        let box=document.querySelectorAll(".box")
-        for(let x of box){
-            x.style.backgroundColor="#1a1a1a"
-        }
-        let z=document.querySelectorAll(".z")
-        for(let x of z){
-            x.style.backgroundColor="#1a1a1a"
-        }
-        
-        document.querySelector("header").style.backgroundColor="black"
-        document.querySelector(".bottom-header").style.backgroundColor="black"
-
-    }
 
 
 

@@ -2,6 +2,7 @@ import "./header.css"
 import "../bootstrap.css"
 import { Link } from "react-router-dom"
 import { useState } from "react"
+import Dark from "../darkMode/dark"
 
 function Header(){
     let x=`<span class="material-symbols-outlined moonx">sleep</span>`
@@ -27,113 +28,6 @@ function Header(){
             document.body.style.overflowY="auto"
 
         }
-    }
-
-    const [isDark,setIsDark]=useState(true);
-    localStorage.setItem("dark",true);
-
-    const darkMode=function(){
-        let isDrak= localStorage.getItem("dark")
-        if(isDark==true){
-            localStorage.setItem("dark",false)
-        }
-        else{
-            localStorage.setItem("dark",true)
-        }
-        if (isDark) {
-            document.body.style.backgroundColor="black"
-            let h5=document.querySelectorAll("h5")
-            for(let x of h5){
-                x.style.color="white"
-            }
-            let h6=document.querySelectorAll("h6")
-            for(let x of h6){
-                x.style.color="white"
-            }
-            let b=document.querySelectorAll("b")
-            for(let x of b){
-                x.style.color="white"
-            }
-            let a=document.querySelectorAll("a")
-            for(let x of a){
-                x.style.color="white"
-            }
-            let h4=document.querySelectorAll("h4")
-            for(let x of h4){
-                x.style.color="white"
-            }
-            let p=document.querySelectorAll("p")
-            for(let x of p){
-                x.style.color="white"
-            }
-            let span=document.querySelectorAll("span")
-            for(let x of span){
-                x.style.color="white"
-            }
-            let box=document.querySelectorAll(".box")
-            for(let x of box){
-                x.style.backgroundColor="#1a1a1a"
-            }
-            let z=document.querySelectorAll(".z")
-            for(let x of z){
-                x.style.backgroundColor="#1a1a1a"
-                x.style.color="white"
-            }
-            
-            document.querySelector("header").style.backgroundColor="black"
-            document.querySelector(".bottom-header").style.backgroundColor="black"
-    
-    
-        }
-        else{
-            document.body.style.backgroundColor=""
-            let h5=document.querySelectorAll("h5")
-            for(let x of h5){
-                x.style.color=""
-            }
-            let h6=document.querySelectorAll("h6")
-            for(let x of h6){
-                x.style.color=""
-            }
-            let b=document.querySelectorAll("b")
-            for(let x of b){
-                x.style.color=""
-            }
-            let a=document.querySelectorAll("a")
-            for(let x of a){
-                x.style.color=""
-            }
-            let h4=document.querySelectorAll("h4")
-            for(let x of h4){
-                x.style.color=""
-            }
-            let p=document.querySelectorAll("p")
-            for(let x of p){
-                x.style.color=""
-            }
-            let span=document.querySelectorAll("span")
-            for(let x of span){
-                x.style.color=""
-            }
-            let box=document.querySelectorAll(".box")
-            for(let x of box){
-                x.style.backgroundColor=""
-            }
-            let z=document.querySelectorAll(".z")
-            for(let x of z){
-                x.style.backgroundColor=""
-                x.style.color=""
-            }
-
-            
-            document.querySelector("header").style.backgroundColor=""
-            document.querySelector(".bottom-header").style.backgroundColor=""
-    
-    
-
-        }
-        setIsDark(!isDark);
-
     }
 
     const sideBar=function(e){
@@ -200,11 +94,7 @@ function Header(){
                     <div className="top-right">
                     <button className="sel sel-active z">Fərdi</button>
                     <button className="sel z">Biznes</button>
-                    <button className="moon x" id="mode-btn" onClick={darkMode}>
-                    <span className="material-symbols-outlined moonx">
-                    sleep
-                    </span>
-                    </button>
+                    <Dark/>
                     <button className="language z">ENG</button>
                     <button className="language z">RUS</button>
                     <button onClick={Open} className="z"><i class="fa-solid fa-magnifying-glass z"></i></button>
