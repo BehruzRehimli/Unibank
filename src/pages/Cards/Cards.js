@@ -39,6 +39,7 @@ export default function Cards(){
     };
 
     const sebetdeVar = () => {
+        
 
         toast.error('Məhsul artıq səbətdə var !', {
             position: "bottom-right",
@@ -55,6 +56,7 @@ export default function Cards(){
 
     let hasBasket=true;
     const Click=(e)=>{
+        e.stopPropagation();
         hasBasket=true;
         let id=e.target.parentElement.parentElement.id;
         let price=e.target.nextElementSibling.innerHTML;
@@ -97,7 +99,11 @@ export default function Cards(){
             }
         }
         document.querySelector(".basketCount").innerHTML= baskets.length
-    }   
+    } 
+    
+    const icon=(e)=>{
+        e.stopPropagation();
+    }
 
 
 
@@ -124,8 +130,8 @@ export default function Cards(){
                     <div id="content" className="col-lg-7 col-md-12 col-sm-12 col-12">
                         <p className="title">Ucard</p>
                         <p className="mt-3 pt-3">UCard - kredit və multivalyutalı debet kartını özündə birləşdirən tək kartdır.</p>
-                        <button onClick={Click} className="orange basket-btn">Əlavə et <i style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
-                        <p className="d-none">5</p>
+                        <button onClick={Click} className="orange basket-btn">Əlavə et <i onClick={icon} style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
+                        <p className="d-none">0</p>
                         <div className="info-icons d-flex justify-content-between">
                             <div className="icon-box">
                             <i class="fa-solid fa-copy"></i>                            
@@ -163,8 +169,8 @@ export default function Cards(){
                                 <div className="kart-infos">
                                 <p className="title mt-5">Visa Platinum</p>
                                 <p id="cart-info" className=" mt-3">Bu kartla hər zaman və hər yerdə yüksək statusunu vurğula! Böyük imkanlar vədd edən kartı həyatının əvəzolunmaz bir hissəsinə çevir.</p>
-                                <button onClick={Click} className="orange basket-btn">Əlavə et <i style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
-                                <p className="d-none">10</p>
+                                <button onClick={Click} className="orange basket-btn">Əlavə et <i onClick={icon} style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
+                                <p className="d-none">100</p>
                                 </div>
                             </div>
                         </div>
@@ -176,8 +182,8 @@ export default function Cards(){
                                 <div className="kart-infos">
                                 <p className="title mt-5">Visa Infinite</p>
                                 <p id="cart-info" className=" mt-4">Bu kartın sahibi olaraq, hər yerdə ən yaxşı xidmət və eksklüziv imkanlar səni gözləyir. Visa növündə olan bu kartdan olduqca fərqli faydalan.</p>
-                                <button onClick={Click} className="orange basket-btn">Əlavə et <i style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
-                                <p className="d-none">2</p>
+                                <button onClick={Click} className="orange basket-btn">Əlavə et <i onClick={icon} style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
+                                <p className="d-none">450</p>
 
                                 </div>
                             </div>
@@ -190,8 +196,8 @@ export default function Cards(){
                             <div className="kart-infos">
                             <p className="title mt-5">Unimiles</p>
                                 <p id="cart-info" className=" mt-4">Uçuşa hazır ol! UniMiles kartı ilə nağdsız ödənişlər et, millər topla və milləri istənilən hava yollarının aviabiletinə dəyiş.</p>
-                                <button onClick={Click} className="orange mt-4 basket-btn">Əlavə et <i style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
-                                <p className="d-none">15</p>
+                                <button onClick={Click} className="orange mt-4 basket-btn">Əlavə et <i onClick={icon} style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
+                                <p className="d-none">100</p>
                             </div>
                             </div>
                         </div>
@@ -203,8 +209,8 @@ export default function Cards(){
                             <div className="kart-infos">
                             <p className="title mt-5">Mastercard Black Edition</p>
                                 <p id="cart-info" className="mt-4 ">Bu kartı əldə etməklə geniş səyahət, sığorta və xidmət imkanlarına malik olursan. Sənin yüksək statusunu MasterCard-ın ən nüfuzlu kartlarından biri vurğulayır!</p>
-                                <button onClick={Click} className="orange basket-btn">Əlavə et <i style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
-                                <p className="d-none">3</p>
+                                <button onClick={Click} className="orange basket-btn">Əlavə et <i onClick={icon} style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
+                                <p className="d-none">100</p>
 
                             </div>
                             </div>
@@ -217,8 +223,8 @@ export default function Cards(){
                                 <div className="kart-infos">
                                 <p className="title mt-5">Mastercard World Elite</p>
                                 <p id="cart-info" className="mt-4">Dünyanın istənilən yerində eksklüziv imkanlar və yüksək xidmət səni gözləyir! Arzularını bu karta həvalə et!</p>
-                                <button onClick={Click} className="orange basket-btn">Əlavə et <i style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
-                                <p className="d-none">20</p>
+                                <button onClick={Click} className="orange basket-btn">Əlavə et <i onClick={icon} style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
+                                <p className="d-none">450</p>
                                 </div>
                             </div>
                         </div>
@@ -233,9 +239,9 @@ export default function Cards(){
                                 <div className="kart-infos">
                                 <p className="title mt-5">Albalı Debet</p>
                                 <p id="cart-info" className="mt-4">Bu kartla dünyanın hər bir nöqtəsində rahat alış-veriş, onlayn ödənişlər et və ya rahat nağd pul çıxar.</p>
-                                <button onClick={Click} className="orange basket-btn">Əlavə et <i style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
+                                <button onClick={Click} className="orange basket-btn">Əlavə et <i onClick={icon} style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
 
-                                <p className="d-none">5</p>
+                                <p className="d-none">50</p>
                                 </div>
                             </div>
                         </div>
@@ -247,8 +253,8 @@ export default function Cards(){
                                 <div className="kart-infos">
                                 <p className="title mt-5">Albalı</p>
                                 <p id="cart-info" className="mt-4">Albalı - 4 bank məhsulunu (kredit, taksit kartı, depozit və debet kartı) özündə birləşdirən beynəlxalq kartdır.</p>
-                                <button onClick={Click} className="orange basket-btn">Əlavə et <i style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
-                                <p className="d-none">7</p>
+                                <button onClick={Click} className="orange basket-btn">Əlavə et <i onClick={icon} style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
+                                <p className="d-none">70</p>
 
                                 </div>
                             </div>
@@ -261,8 +267,8 @@ export default function Cards(){
                                 <div className="kart-infos">
                                 <p className="title mt-5">UCard Gift</p>
                                 <p id="cart-info" className="mt-4">UCard Gift-ən çox arzulanan hədiyyə! UCard Gift kartını hədiyyə et!</p>
-                                <button onClick={Click} className="orange mt-4 basket-btn">Əlavə et <i style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
-                                <p className="d-none">7</p>
+                                <button onClick={Click} className="orange mt-4 basket-btn">Əlavə et <i onClick={icon} style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
+                                <p className="d-none">50</p>
 
                                 <button className="grey">Partnyorlar</button>
                                 </div>
@@ -276,8 +282,8 @@ export default function Cards(){
                                 <div className="kart-infos">
                                 <p className="title mt-5">Digital card</p>
                                 <p id="cart-info" className="mt-4 ">Artıq kart sifarişi üçün banka gəlməyə ehtiyac yoxdur. Bu kart ilə hesab açmadan UBank-da, müxtəlif İnternet saytlarda bütün ödənişlərini rahatlıqla edə bilərsən.</p>
-                                <button onClick={Click} className="orange basket-btn">Əlavə et <i style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
-                                <p className="d-none">4</p>
+                                <button onClick={Click} className="orange basket-btn">Əlavə et <i onClick={icon} style={{color:"white"}} class="fa-solid fa-arrow-right-long"></i></button>
+                                <p className="d-none">0</p>
 
                                 </div>
                                 </div>

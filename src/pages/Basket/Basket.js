@@ -113,7 +113,7 @@ export default function Basket(){
                         totalSum+=total;
                         totalCount+=element.Count;
                         return(
-                            <div id={element.Id} key={element.Id} className="box z mb-3">
+                            <div id={element.Id} key={element.Id} className="box mb-3">
                             <div className="row">
                                 <div className="col-lg-2 col-md-12 col-sm-12 col-12">
                                     <img src={element.Src} alt="cart" />
