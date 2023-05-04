@@ -18,7 +18,7 @@
     border: none;
     background-color: var(--text-color) !important;
     .dark-img{
-        background: var(--text-color) url("../../../src/images/sun.png") no-repeat center ;
+        background: var(--text-color) var(--image) no-repeat center ;
         background-size: cover;
         
     }
@@ -38,8 +38,8 @@
     --white: #fff;
     --box: #1a1a1a;
     --box2: #fafafa;
-    --img: "../../../src/images/sun.png"
-    --img2: "../../../src/images/moon.png"
+    --img: url("../../../src/images/sun.png");
+    --img2: url("../../../src/images/moon.png");
 }
 
 body.dark{
@@ -47,16 +47,16 @@ body.dark{
     --text-color: var(--white);
     --box-background: var(--box);
     --top-header: var(--dark);
-    --z: var(--box)
-    --image: var(--img)
+    --z: var(--box);
+    --image: var(--img);
 }
 body.light{
     --background-color: var(--white);
     --text-color: var(--dark);
     --box-background: var(--box2);
     --top-header:var(--box2);
-    --z: var(--white)
-    --image: var(--img2)
+    --z: var(--white);
+    --image: var(--img2);
 }
 body{
     background-color: var(--background-color) !important;
